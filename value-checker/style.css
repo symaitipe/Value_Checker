@@ -13,7 +13,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 400px;
 }
 
 ul {
@@ -23,14 +23,26 @@ ul {
 li {
   list-style: none;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  width: 30px;
+  text-align: center;
+  margin: 0 5px;
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 1em;
 }
 
 .input {
-  width: calc(100% - 20px);
+  flex: 1;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-top: 5px;
+  margin-right: 10px;
 }
 
 button {
@@ -42,7 +54,6 @@ button {
   cursor: pointer;
   font-size: 16px;
   margin: 5px;
-  width: 100%;
 }
 
 button:hover {
@@ -54,4 +65,19 @@ button:hover {
   font-size: 18px;
   color: #333;
   text-align: center;
+}
+
+.removeBtn {
+  background-color: #dc3545;
+  padding: 5px 10px;
+}
+
+.removeBtn:hover {
+  background-color: #c82333;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }

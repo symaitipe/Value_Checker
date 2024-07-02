@@ -8,36 +8,32 @@
   </head>
   <body>
     <div class="demo">
-      <ul>
-        <li>
-          Enter Value 1 :
-          <input type="text" class="input" placeholder="Number 1" />
-        </li>
-        <br />
-        <li>
-          Enter Value 2 :
-          <input type="text" class="input" placeholder="Number 2" />
-        </li>
-        <br />
-        <li>
-          Enter Value 3 :
-          <input type="text" class="input" placeholder="Number 3" />
-        </li>
-        <br />
-        <table>
-          <tr>
-            <td>
-              <li><button class="maxBtn">Max</button></li>
-            </td>
-            <td>
-              <li><button class="minBtn">Min</button></li>
-            </td>
-            <td>
-              <li><button class="clrBtn">Clear</button></li>
-            </td>
-          </tr>
-        </table>
-      </ul>
+      <div class="input-container">
+        <ul class="list">
+          <li>
+            Enter Value
+            <input type="number" class="number" disabled value="1" />:
+            <input type="text" class="input" placeholder="Number 1" />
+            <button class="removeBtn" onclick="removeInput(this)">
+              Remove
+            </button>
+          </li>
+          <li>
+            Enter Value
+            <input type="number" class="number" disabled value="2" />:
+            <input type="text" class="input" placeholder="Number 2" />
+            <button class="removeBtn" onclick="removeInput(this)">
+              Remove
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="buttons-container">
+        <button class="addBtn">Add More</button>
+        <button class="maxBtn">Max</button>
+        <button class="minBtn">Min</button>
+        <button class="clrBtn">Clear</button>
+      </div>
       <div class="result-container"></div>
     </div>
     <script src="./script.js"></script>
